@@ -9,7 +9,7 @@ int main(int argc, char **argv)
 	FILE *input = open_file(argc, argv);
 	if (!input) return 1;
 
-    BMPFILEHEADER fh;
+        BMPFILEHEADER fh;
 	BMPINFOHEADER ih;
 	
 	fread(&fh, sizeof(BMPFILEHEADER), 1, input);
